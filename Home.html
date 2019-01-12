@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HomePage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Bitter|Coiny|Spicy+Rice" rel="stylesheet">
+<style>
+body, html{
+	height: 100%;
+}
+.header{
+	height:400px;
+}
+img{
+	height: 100%;
+	width: 100%;
+	position: center;
+}
+.img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: #660066;
+}
+.imgText{
+	font-size: 70px;
+	position: absolute;
+	float: right;
+	right: 20%;
+	top: 10%;
+	font-family:'Spicy Rice';
+}
+/* Style the topnav links */
+li a {
+  display: block;
+  text-align:center;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+li a:hover {
+  background-color: #e0e0d1;
+  color: blue;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 200px;
+  overflow: hidden;
+  background-color:#006080;
+  font-family:'Bitter';
+}
+li {
+	float:left;
+}
+.dropdown {
+  display: inline-block;
+  text-align:center;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  overflow: auto;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color:  #7a1f5c;
+  color: white;
+}
+i {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  color: white;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  height: 270px;
+  padding: 15px;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column:hover{
+	transform:scale(1.1);
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+.text{
+	position:absolute;
+	float:center;
+	margin-top:-12%;
+	margin-left:9%;
+	font-size:25px;
+	color:white;
+	font-family:'Coiny';
+}
+</style>
+</head>
+<body>
+<div class ="header">
+<ul>
+  <li><a href="Home.html">HOME</a></li>
+  <li class="dropdown">
+  <span id="label">COURSES&nbsp;<i class="arrow down"></i></span>
+  <div class="dropdown-content"></div>
+</li>
+  <li><a href="#">LOGIN/REGISTER</a></li>
+</ul>
+<div class="img">
+<img src="https://images.unsplash.com/photo-1504257365157-1496a50d48f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"></img>
+<div class="imgText">BUILD YOUR<br>CAREER</div>
+</div>
+</div>
+<div class="row">
+<div class="column">
+<a href="#"><img style="opacity: 0.8" src="https://fs.bitcoinmagazine.com/img/images/blockchain-curriculum.original.jpg"></img></a>
+<div class="text" style="margin-top:-13%;">Explore the<br>&nbsp;&nbsp;Colleges</div>
+</div>
+<div class="column">
+<a href="#"><img style="opacity: 0.8" src="https://telfer.uottawa.ca/assets/images/2018/accomplishment-celebrate-ceremony-267885(1).jpg"></img></a>
+<div class="text">Alumni Reviews</div>
+</div>
+<div class="column">
+<a href="#"><img style="opacity: 0.8" src="https://tez.quikr.com/wp-content/uploads/sites/2/2017/08/3.jpg"></img></a>
+<div class="text">Deadlines</div>
+</div>
+</div>
+</body>
+</html>
