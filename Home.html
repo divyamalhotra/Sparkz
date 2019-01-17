@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HomePage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Bitter|Coiny|Spicy+Rice" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+<div class ="header">
+<ul class="head">
+  <li><a href="Home.html">HOME</a></li>
+  <li class="dropdown">
+  <span id="label">COURSES&nbsp;<i class="arrow down"></i></span>
+  <div class="dropdown-content">
+  </div>
+</li>
+  <li><button id="myBtn">LOGIN/REGISTER</button></li></ul>
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form action="user.jsp">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              LinkedIn Profile<span class="req">*</span>
+            </label>
+            <input type="url"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+              <label>
+                Course of Interest<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off"/>
+            </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block" value="submit">Get Started</button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+        
+          <button class="button button-block">Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+  </div>
+
+</div>
+<div class="img">
+<img src="https://images.unsplash.com/photo-1504257365157-1496a50d48f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"></img>
+<div class="imgText">BUILD YOUR<br>CAREER</div>
+</div>
+</div>
+<div class="row">
+<div class="column">
+<a href="#"><img style="opacity: 0.8" src="https://fs.bitcoinmagazine.com/img/images/blockchain-curriculum.original.jpg"></img></a>
+<div class="text" style="margin-top:-13%;">Explore the<br>&nbsp;&nbsp;Colleges</div>
+</div>
+<div class="column">
+<a href="alumni.jsp"><img style="opacity: 0.8" src="https://telfer.uottawa.ca/assets/images/2018/accomplishment-celebrate-ceremony-267885(1).jpg"></img></a>
+<div class="text">Alumni Reviews</div>
+</div>
+<div class="column">
+<a href="#"><img style="opacity: 0.8" src="https://tez.quikr.com/wp-content/uploads/sites/2/2017/08/3.jpg"></img></a>
+<div class="text">Deadlines</div>
+</div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="text/javascript">
+//Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Changing between SignIn and SignUp
+$('.form').find('input, textarea').on('keyup blur focus', function (e) {
+	  
+	  var $this = $(this),
+	      label = $this.prev('label');
+
+		  if (e.type === 'keyup') {
+				if ($this.val() === '') {
+	          label.removeClass('active highlight');
+	        } else {
+	          label.addClass('active highlight');
+	        }
+	    } else if (e.type === 'blur') {
+	    	if( $this.val() === '' ) {
+	    		label.removeClass('active highlight'); 
+				} else {
+			    label.removeClass('highlight');   
+				}   
+	    } else if (e.type === 'focus') {
+	      
+	      if( $this.val() === '' ) {
+	    		label.removeClass('highlight'); 
+				} 
+	      else if( $this.val() !== '' ) {
+			    label.addClass('highlight');
+				}
+	    }
+
+	});
+
+	$('.tab a').on('click', function (e) {
+	  
+	  e.preventDefault();
+	  
+	  $(this).parent().addClass('active');
+	  $(this).parent().siblings().removeClass('active');
+	  
+	  target = $(this).attr('href');
+
+	  $('.tab-content > div').not(target).hide();
+	  
+	  $(target).fadeIn(600);
+	  
+	});
+</script>
+</body>
+</html>
