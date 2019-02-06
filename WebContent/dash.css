@@ -1,0 +1,98 @@
+@charset "ISO-8859-1";
+body{
+	height:100%;
+}
+
+.container-fluid{
+	height:100%;
+}
+.navbar{
+	font-family:'bitter';
+	font-size:16px;
+}
+.data{
+	background-image:url('https://static.thefabricator.com/a/5-steps-to-successful-career-path-management-1517501152.jpg');
+	background-size:cover;
+	text-align:right;
+	font-size:20px;
+	color:#1a4613;
+	margin:2%;
+	margin-top:-4.8%;
+}
+ul.sidebar-menu {
+    margin-top: 75px;
+}
+ul.sidebar-menu, ul.sidebar-menu li ul.sub {
+    margin: -18px 0 0;
+    padding: 8px;
+}
+.sidebar-menu{
+	font-family:'Spice Rice';
+	width:27%;
+	height:100%;
+	background-image:url('https://static.thefabricator.com/a/5-steps-to-successful-career-path-management-1517501152.jpg');
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.sidebar-menu li{
+	font-size:20px;
+	color:#c68cff;
+
+	}
+	
+	.col-sm-3{
+margin-left:3%;
+}
+.card{
+background: #4dffa6	;
+border-radius: 10px;
+}
+#users{
+display: grid;
+    grid-gap: 40px;
+        grid-template-columns: 270px 270px 270px 270px;
+        /*background-color: #fff;*/
+        color:#006bb3;
+        left: 2%;
+        top:35px;       
+}
+.card-body{
+	text-align: center;
+	font-size: 25px;
+	
+}
+.card-title{
+	font-size: 30px;
+}
+
+.myButt {
+  outline: none;
+  border: none;
+  padding: 10px;
+  display: block;
+  margin: 25px auto;
+  cursor: pointer;
+  font-size: 25px;
+  background-color: #00b359;
+  position: relative;
+  /*border: 2px solid #fff*/;
+  width: 200px;
+  border-radius: 3px;
+}
+.four {
+  overflow: hidden;
+}
+.four span {
+  color: #fff;
+  display: inline-block;
+
+}
+.four:hover {
+  transform: scale(1.1);
+}
+}

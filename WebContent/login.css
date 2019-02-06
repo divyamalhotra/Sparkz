@@ -1,0 +1,229 @@
+@charset "ISO-8859-1";
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body, html{
+	height: 100%;
+	
+}
+body{
+	background-image:url('https://2198eb3sck6j27usuglr33j18sm-wpengine.netdna-ssl.com/wp-content/uploads/graduation-caps-in-air.jpg');
+	background-size:cover;
+	height:100%;
+}
+
+.tab-group li a:hover {
+  color: #179b77;
+}
+
+.form {
+	font-family:'Bitter';
+ 
+ background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); 
+  padding: 18px;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+	font-family:'Coiny';
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  font-family:'Coiny';
+  text-decoration: none;
+  color: #ffffff;
+  transition: .5s ease;
+  padding: 10px;
+  background: rgba(160, 179, 176, 0.25);
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.tab-group li a:hover {
+  background: #096195;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: #3c8ac4;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+  
+}
+h1 {
+  text-align: center;
+  color: #452969;
+  font-weight: 300;
+  margin: 0 0 20px;
+  font-family:'Bitter';
+}
+
+label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: #c0c0c0;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 16px;
+}
+label .req {
+  margin: 2px;
+  color: #0000ff;
+}
+
+label.active {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  left: 2px;
+  font-size: 12px;
+}
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: #d2bfea;
+}
+.course input, textarea{
+	width: 90%;
+}
+input, textarea {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  color: #ffffff;
+ 
+  transition: border-color .25s ease, box-shadow .25s ease;
+   border: 1px solid #4a3ade;
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 20px;
+  font-family: "Muli-Bold";
+  background: none; }
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border:0px;
+}
+
+
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+.course{
+	display:flex;
+}
+.course .field-wrap:first-child{
+	margin-right: 5px;
+}
+.course .field-wrap:second-child{
+	margin-right: 5px;
+}
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-family:'Coiny';
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background:  #624969;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #403144;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
+.inner {
+  min-width: 850px;
+  margin: auto;
+  padding-top: 68px;
+  padding-bottom: 48px;
+  background: url("registration-form-2.jpg"); }
+  .inner h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Muli-Bold";
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    letter-spacing: 2px; }
+.form-group {
+  display: flex; }
+  .form-group .form-wrapper {
+    width: 50%; }
+    .form-group .form-wrapper:first-child {
+      margin-right: 20px; }
+
+.form-wrapper {
+  margin-bottom: 15px; }
+  .form-wrapper label {
+    margin-bottom: 9px;
+    display: block; }
+
+#courses{
+	text-color:grey;
+	font-family:'Bitter';	
+}
+#wrong{
+	font-size:10px;
+	color:yellow;
+}
+}
